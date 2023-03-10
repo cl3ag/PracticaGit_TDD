@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 class FizzBuzzTest {
     @Test
@@ -23,5 +24,28 @@ class FizzBuzzTest {
         //assert
         assertEquals("fizz", cocheRojo);
         System.out.println("Test con 3 ejecutado correctamente");
+    }
+    @Test
+    void TestCon4y5(){
+        //arrange (set up)
+        FizzBuzz prueba1 = new FizzBuzz();
+        FizzBuzz prueba2 = new FizzBuzz();
+        //action
+        String cocheRojo = prueba1.calculo(4);
+        String cocheAmarillo = prueba2.calculo(5);
+        //assert
+        assertEquals("4", cocheRojo);
+        assertEquals("buzz", cocheAmarillo);
+        System.out.println("Test con 4 y 5 ejecutado correctamente");
+    }
+    @Test
+    void TestCon6(){
+        //arrange (set up)
+        FizzBuzz prueba1 = new FizzBuzz();
+        //action
+        String cocheRojo = prueba1.calculo(6);
+        //assert
+        assertEquals("fizz", cocheRojo);
+        System.out.println("Test con 6 ejecutado correctamente");
     }
 }
