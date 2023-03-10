@@ -73,4 +73,33 @@ class FizzBuzzTest {
         assertEquals("buzz", cocheRojo);
         System.out.println("Test con 10 ejecutado correctamente");
     }
+    @Test
+    void TestCon11Y12Y13Y14(){
+        //arrange (set up)
+        FizzBuzz prueba1 = new FizzBuzz();
+        FizzBuzz prueba2 = new FizzBuzz();
+        FizzBuzz prueba3 = new FizzBuzz();
+        FizzBuzz prueba4 = new FizzBuzz();
+        //action
+        String cocheRojo = prueba1.calculo(11);
+        String cocheAmarillo = prueba2.calculo(12);
+        String cocheVerde = prueba3.calculo(13);
+        String cocheGris = prueba4.calculo(14);
+        //assert
+        assertEquals("11", cocheRojo);
+        assertEquals("fizz", cocheAmarillo);
+        assertEquals("13", cocheVerde);
+        assertEquals("14", cocheGris);
+        System.out.println("Test con 10 ejecutado correctamente");
+    }
+    @Test
+    void TestCon15(){
+        //arrange (set up)
+        FizzBuzz prueba1 = new FizzBuzz();
+        //action
+        String cocheRojo = prueba1.calculo(15);
+        //assert
+        assertEquals("fizzbuzz", cocheRojo);
+        System.out.println("Test con 15 ejecutado correctamente");
+    }
 }
